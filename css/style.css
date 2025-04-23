@@ -1,13 +1,3 @@
-/* @media only screen and (max-width:600px) {
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 10px;
-    }
-} */
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -281,4 +271,61 @@ body {
     font-size: 14px;
     color: #ccc;
     text-transform: capitalize;
-}
+
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        header,
+        main,
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .container,
+        .content,
+        .section {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button,
+        .btn {
+            width: 100%;
+            font-size: 18px;
+            padding: 12px;
+        }
+
+        .card,
+        .box,
+        .item {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .desktop-only {
+            display: none;
+        }
+    }
