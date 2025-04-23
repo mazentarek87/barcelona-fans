@@ -1,3 +1,13 @@
+@media only screen and (max-width:600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +74,7 @@ body {
 }
 
 .dropdown-menu li a {
-    display: block;
+    */ display: block;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
